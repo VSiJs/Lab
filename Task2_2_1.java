@@ -1,8 +1,9 @@
+
 package Lab2;
 
 import java.util.Scanner;
 
-public class Task2 {
+public class Task2_2_1 {
 	public static void main(String[] args) {
 		try (Scanner scanner = new Scanner(System.in)) {
 			System.out.println("n: ");
@@ -14,13 +15,15 @@ public class Task2 {
 
 	public static void printPyramid(int n) {
 		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n - i; j++) {
+			for (int j = 1; j <= n - i; j+=1) {
 				System.out.print(" ");
+			}  
+			for (int k = 1; k <= 2*i-1; k+=2) {
+				System.out.print(" ");
+				System.out.print(i);
 			}
-			for (int k = 1; k <= 2 * i - 1; k++) {
-				System.out.print("X");
-			}
-			System.out.println();
-		} 
-	}
-} 
+			System.out.println();  
+		}
+	}  
+}
+       	    
